@@ -111,7 +111,7 @@ pf.gamelogic.currentgun = nil
 
 for i,v in pairs(pf.networkCache) do
     if debug.getconstants(v)[24] == " : " then
-        v({Name = "SmartAim", TeamColor = BrickColor.White()}, "Loaded! (took " .. math.round((os.clock() - cur) * 1000000) .. " ns)")
+        v({Name = "SmartAim", TeamColor = BrickColor.Random()}, "Loaded! (took " .. math.round((os.clock() - cur) * 1000000) .. " ns)")
         break
     end
 end
